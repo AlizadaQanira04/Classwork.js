@@ -53,17 +53,21 @@ lorem1.forEach((item) => {
 // DEVELOPER
 
 // --------------------------------------------------------- TASK 5 ---------------------------------------------------------
-let body = document.querySelector(".body")
+let body = document.querySelector(".body");
 // HTML-də button yaradın və ona click ettikdə body-nin background color-u dəyişsin.
-let count=0;
-let array =["red","blue","green","yellow","white","purple","solid","grey"]
-let interval=setInterval(()=>{
-   
-btn.addEventListener("click", () => {
-        document.body.style.backgroundColor = array[Math.floor(Math.random()*array.length)];
-    
- })
- 
-    
-},1000)
+let count = 0;
+let array = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "white",
+  "purple",
+  "solid",
+  "grey",
+];
 
+btn.addEventListener("click", () => {
+  document.body.style.backgroundColor =
+    array[Math.floor(Math.random() * array.length)];
+});
