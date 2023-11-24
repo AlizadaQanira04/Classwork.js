@@ -1,4 +1,5 @@
 let key = document.querySelectorAll(".key");
+let words = document.querySelector(".words")
 console.log(key);
 let listOne = document.querySelector(".list one");
 let listTwo = document.querySelector(".list two");
@@ -12,6 +13,7 @@ window.addEventListener("keydown", function (e) {
       element.style.backgroundColor = "#06c06f";
       element.style.transform = "scale(1.3)";
       element.style.transition = "150ms";
+      words.innerText+=e.key;
     }
   });
 });
