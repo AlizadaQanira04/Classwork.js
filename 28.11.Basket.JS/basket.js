@@ -1,7 +1,7 @@
 let basketItems = JSON.parse(localStorage.getItem("products"));
 let box = document.querySelector(".box");
 
-drawCard(products);
+drawCard(basketItems);
 function drawCard(data) {
   data.forEach((element) => {
     box.innerHTML += `<div class="col-12 col-md-6 col-lg-4 mb-5 ">
@@ -13,13 +13,6 @@ function drawCard(data) {
     <p class="card-text">
     ${element.description.slice(0, 100)}...
     </p>
-    <div class="box d-flex justify-content-between align-items-center">
-    
-    <a href="#" class="btn btn-primary" onclick=addToBasket("${
-      element._id
-    }")>ADD TO BASKET</a>
-    <i class="fa-regular fa-heart"></i>
-    </div>
     </div>
     </div>
     </div> `;

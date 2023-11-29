@@ -315,11 +315,11 @@ const products = [
   },
 ];
 
-let box = document.querySelector(".boxes");
+let pDiv = document.querySelector(".boxes");
 drawCard(products);
 function drawCard(data) {
   data.forEach((element) => {
-    box.innerHTML += `<div class="col-12 col-md-6 col-lg-4 mb-5 ">
+    pDiv.innerHTML += `<div class="col-12 col-md-6 col-lg-4 mb-5 ">
     <div class="card" style="width: 18rem">
     <img src="${element.thumbnail}" class="card-img-top" alt="..." />
     <div class="card-body">
@@ -340,11 +340,12 @@ function drawCard(data) {
     </div> `;
   });
 }
-let produts=localStorage.setItem("products",JSON.stringify(products))
+let basketItems=localStorage.setItem("basket",JSON.stringify(products))
 let basket = JSON.parse(localStorage.getItem("products")) ?? [];
 function addToBasket(id) {
   let findItem = products.find((item) => item._id === id);
 basket.push(findItem)
-localStorage.setItem("produsts",JSON.stringify(basket))
+// console.log(basketItems);
+localStorage.setItem("products",JSON.stringify(basket))
 
 }
