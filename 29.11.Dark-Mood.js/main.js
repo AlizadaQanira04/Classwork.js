@@ -1,7 +1,7 @@
 let body = document.querySelector(".body");
 let box = document.querySelector(".box");
 let btn = document.querySelector(".dark");
-let mode = localStorage.getItem("dark-mode");
+let mode = localStorage.getItem("dark-mode");0
 if(mode==="true"){
     body.classList.add("dark-mode");
     box.classList.add("dark-box"); 
