@@ -1,6 +1,6 @@
 const products = document.querySelector(".products-div");
 const form = document.querySelector("form");
-const allInputs = document.querySelectorAll(".form-control");
+const allInputs = document.querySelectorAll("input");
 
 const BASE_URL = ` https://api.escuelajs.co/api/v1`;
 
@@ -52,13 +52,13 @@ function deleteCustomer(id, btn) {
         images:[inputs[3].value]
       
     };
-  
+  console.log(obj);
     fetch(`${BASE_URL}/products`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify(obj),
+      body: JSON.stringify(),
     }).then(() => {
       fetch(`${BASE_URL}/products`)
         .then((response) => response.json())
