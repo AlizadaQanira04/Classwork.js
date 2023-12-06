@@ -1,21 +1,11 @@
-let box=document.querySelector(".box");
-let box1=document.querySelector(".box1");
 let input=document.querySelector("input");
 let btn=document.querySelector("button");
-let container=document.querySelector(".container");
-let body=document.querySelector("body");
 
+let curCity
 
-// body.style.backgroundImage =
-// "linear-gradient(to left bottom , blue, pink,violet,yellow)";
-// body.style.height="100vh"
-// container.style.display="flex";
-// container.style.flexDirection="column";
+function getWeather(curCity){
+    fetch(`https://api.weatherapi.com/v1/current.json?key=de4fcc1d06a64857be7101727222212&q=${curCity}&aqi=no`)
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+}
 
-// box.style.display="flex"
-// box.style.flexDirection="column";
-// box.style.width="300px";
-// box.style.height="20vhpx"
-// box.style.backgroundColor="yellow",
-// box1.style.backgroundColor="white"
-// box1.style.height="10vh"
