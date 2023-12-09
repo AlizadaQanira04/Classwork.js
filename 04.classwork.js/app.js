@@ -17,7 +17,7 @@ let itCompanies = [
 // for (let i = 0; i < itCompanies.length; i++) {
 //   console.log(itCompanies[i]);
 // }
-//TASK5
+// TASK5
 // console.log(itCompanies[0]);
 console.log(itCompanies[parseInt(itCompanies.length / 2)]);
 // console.log(itCompanies[itCompanies.length-1]);

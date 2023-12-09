@@ -246,6 +246,7 @@ function drawTable(data) {
   });
 }
 drawTable(users);
+
 search.addEventListener("input", function (event) {
   let filtered = users.filter((item) =>
     `${item.first_name} ${item.last_name}`
@@ -270,16 +271,19 @@ sortName.addEventListener("click", function () {
   let sortedName = users.sort((a, b) => (a.first_name > b.first_name ? 1 : -1));
   drawTable(sortedName);
 });
-
+let copy = structuredClone(users);
 let asc = document.querySelector(".asc");
 asc.addEventListener("click", function () {
   if (this.innerText === "ASC") {
     this.innerText = "DESC";
     let sorted = users.sort((a, b) => a.id - b.id);
     drawTable(sorted);
-  } else {
-    this.innerText = "ASC";
+  } else if (this.innerText === "DESC") {
+    this.innerText = "DEFAULT";
     let sorted = users.sort((a, b) => b.id - a.id);
     drawTable(sorted);
+  } else {
+    this.innerText = "ASC"
+    drawTable(copy);
   }
 });

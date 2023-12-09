@@ -1,7 +1,7 @@
 let firstName = document.querySelector("#firstName");
 let form = document.querySelector("form");
-let lastName = document.querySelectorAll("#lastName");
-let address = document.querySelectorAll("#address");
+let lastName = document.querySelector("#lastName");
+let address = document.querySelector("#address");
 
 let data = JSON.parse(localStorage.getItem("personObj")) || [];
 form.addEventListener("submit", function (e) {
@@ -19,3 +19,5 @@ form.addEventListener("submit", function (e) {
   lastName.value = "",
   address.value = ""
 });
+
+

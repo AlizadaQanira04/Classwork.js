@@ -67,7 +67,9 @@ let array = [
   "grey",
 ];
 
-btn.addEventListener("click", () => {
-  document.body.style.backgroundColor =
-    array[Math.floor(Math.random() * array.length)];
-});
+// btn.addEventListener("click", () => {
+//   document.body.style.backgroundColor =
+//     array[Math.floor(Math.random() * array.length)];
+// });
+
+
