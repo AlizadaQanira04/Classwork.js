@@ -1,4 +1,4 @@
-//TASK1
+// //TASK1
 // let number = 0;
 // for(number=0;number<100;number++){
 //     if(number%2===0)
@@ -53,3 +53,11 @@
 //     sum +=i
 // }
 // console.log(sum);
+
+
+// let num=0;
+// for(num=0;num<100;num++){
+//     if(num%2===0) console.log(num);
+    
+    
+// }
