@@ -8,10 +8,7 @@ async function getData() {
   let response = await axios(`${BASE_URL}`);
   //   console.log(response.data);
   loading.classList.remove("show");
-  drawTable(response.data);
-}
-getData();
-
+  
 function drawTable(data) {
   tBody.innerHTML = "";
   data.forEach((element) => {
