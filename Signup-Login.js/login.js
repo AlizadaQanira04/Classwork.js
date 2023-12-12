@@ -1,7 +1,7 @@
 let form = document.querySelector("form");
 let allInputs = document.querySelectorAll(".form-control");
 let icon = document.querySelector(".fa-solid");
-let arr = JSON.parse(localStorage.getItem("arr")) ?? [];
+let arr = JSON.parse(localStorage.getItem("arr"));
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -10,11 +10,14 @@ form.addEventListener("submit", function (event) {
       (item) =>
         item.email === allInputs[0].value &&
         item.password === allInputs[1].value
+
     );
     if (bool) {
-      window.location = "home.html";
+        window.location = "home.html";
+        localStorage.setItem("name",JSON.stringify(bool.userName))
+        console.log(arr);
     } else {
-      window.alert("not find");
+      window.alert("don't find");
     }
   } else {
     window.alert("input not be empty");
