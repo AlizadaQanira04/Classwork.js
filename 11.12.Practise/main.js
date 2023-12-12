@@ -132,3 +132,4 @@ console.log(persons.find((item)=>item.age>30 ))
 
 // tapdığınız objectin index-ni də ikinci bir console-da çıxardın.(metod ilə)
 console.log(persons.findIndex((item)=>item.age>30));
+g
