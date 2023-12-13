@@ -4,13 +4,15 @@ const allInputs = document.querySelectorAll("input");
 
 const BASE_URL = ` https://api.escuelajs.co/api/v1`;
 
-fetch(`${BASE_URL}/products`)
-  .then((response) => response.json())
-  .then((data) => {
-    // console.log(data);
-    drawCards(data);
-  })
-  .catch((err) => console.log(err));
+// fetch(`${BASE_URL}/products`)
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//     drawCards(data);
+//   })
+//   .catch((err) => console.log(err));
+
+
 
 function drawCards(array) {
   products.innerHTML = "";

@@ -53,13 +53,21 @@ body.append(headerTag);
 body.append(form);
 body.style.margin = "70px";
 
+
+
+
+
+
+
+
+
 form.addEventListener("submit", function (event) {
     let arr = JSON.parse(localStorage.getItem("arr")) ?? [];
   event.preventDefault();
   let bool = arr.some(
     (item) =>
-      item.createPassWord === inputPassword.value ||
-      item.email === inputEmail.value ||
+      item.createPassWord === inputPassword.value &&
+      item.email === inputEmail.value &&
       item.ConfirmPassword === inputConfirmPassword.value
   );
   let obj = {
@@ -69,8 +77,8 @@ form.addEventListener("submit", function (event) {
     id: Date.now(),
   };
   if (
-    inputPassword.value !== "" ||
-    inputEmail.value !== "" ||
+    inputPassword.value !== "" &&
+    inputEmail.value !== "" &&
     inputConfirmPassword.value !== ""
   ) {
     if (!bool) {

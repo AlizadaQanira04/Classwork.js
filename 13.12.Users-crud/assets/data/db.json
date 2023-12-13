@@ -17,14 +17,6 @@
       "id": 3
     },
     {
-      "name": "Aline Rivas",
-      "surname": "Ian Strong",
-      "email": "vekixalat@mailinator.com",
-      "date": "12/13/2023, 5:55:18 AM",
-      "userphoto": "./assets/img/Iqo - Copy.jpg",
-      "id": 4
-    },
-    {
       "name": "Clarke Harris",
       "surname": "Eliana Mcclure",
       "email": "pogemo@mailinator.com",
@@ -47,14 +39,6 @@
       "date": "12/13/2023, 9:26:53 AM",
       "userphoto": "./assets/img/Alfredo.jpg",
       "id": 9
-    },
-    {
-      "name": "Remy",
-      "surname": "mouse",
-      "email": "remy@gmail.com",
-      "date": "5/17/2023, 10:21:36 AM",
-      "userphoto": "./assets/img/remy2.jpg",
-      "id": 4
     },
     {
       "name": "Remy",
@@ -103,6 +87,14 @@
       "date": "12/13/2023, 5:39:17 AM",
       "userphoto": "./assets/img/Alfredo.jpg",
       "id": 18
+    },
+    {
+      "name": "Jamalia Terrell",
+      "surname": "Allegra Blackburn",
+      "email": "taluqecy@mailinator.com",
+      "date": "13.12.2023, 21:19:44",
+      "userphoto": "./assets/img/Collete.jpg",
+      "id": 19
     }
   ]
 }

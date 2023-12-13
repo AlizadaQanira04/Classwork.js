@@ -49,6 +49,13 @@ body.append(form);
 body.style.margin = "70px";
 
 
+
+
+
+
+
+
+
 form.addEventListener("submit", function (event) {
     let arr=JSON.parse(localStorage.getItem("arr"))
   event.preventDefault();

@@ -5,7 +5,9 @@ let thirdBtn = document.querySelector(".thirdBtn");
 let fourthBtn = document.querySelector(".fourthBtn");
 
 let BASE_URL = "https://fakestoreapi.com/products";
+
 // axios.get(`${BASE_URL}/category`).then((res) => console.log(res.data));
+
 
 function drawCards(array) {
   box.innerHTML = "";
@@ -33,10 +35,7 @@ async function getData(endPoint="") {
   let responce = await axios.get(`${BASE_URL}/${endPoint}`);
   drawCards(responce.data);
 }
-
-
 getData()
-
 
 firstBtn.addEventListener("click", function () {
   getData("category/electronics");

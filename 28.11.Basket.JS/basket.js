@@ -13,8 +13,16 @@ function drawCard(data) {
     <p class="card-text">
     ${element.description.slice(0, 100)}...
     </p>
+   <button class="btn btn-danger" onclick=deleteProduct(this,"${
+      element._id}")>Delete</button>
     </div>
     </div>
     </div> `;
   });
+}
+
+
+function deleteProduct(btn, id) {
+   basket = basketItems.filter((item) => item._id!==id);
+  btn.parentElement.parentElement.parentElement.remove();
 }

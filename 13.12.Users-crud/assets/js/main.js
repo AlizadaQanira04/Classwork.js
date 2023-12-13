@@ -20,7 +20,7 @@ function drawTable(data) {
         <td> 
         <a class="tagA" href="form.html?id=${element.id}">Edit</a>
         <button class="button1" onclick=deleteTr("${element.id}",this)>Delete</button>
-        <button class="button2">ADD Fav</button>
+        <button class="button2" onclick=adToFavorite("${element.id}")>ADD Fav</button>
         </td>
         `;
     tBody.append(trElement);
@@ -30,7 +30,19 @@ function drawTable(data) {
 async function deleteTr(id, btn) {
   if (confirm("DELETE ?")) {
     btn.closest("tr").remove();
-    await axios.delete(`${BASE_URL}/${id}`);
+    await axios.delete(`${BASEd_URL}/${id}`);
     await getData();
   }
+}
+let response = axios(`${BASE_URL}`).then((res)=>console.log(res.data));
+let favoriteItems=localStorage.setItem("products",JSON.stringify(response))
+let favorite = JSON.parse(localStorage.getItem("products")) ?? [];
+
+
+async function adToFavorite(id) {
+  let findItem =products.find((item) => item.id === id);
+  favorite.push(findItem)
+  // console.log(basketItems);
+  localStorage.setItem("favorite",JSON.stringify(favorite))
+  
 }
