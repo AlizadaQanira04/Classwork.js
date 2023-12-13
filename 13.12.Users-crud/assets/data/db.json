@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "name": "Chef",
+      "surname": "Skinner",
+      "email": "Chef@gmail.com",
+      "date": "5/17/2023, 10:17:45 AM",
+      "userphoto": "./assets/img/Chef.jpeg",
+      "id": 2
+    },
+    {
+      "name": "Gusteau",
+      "surname": "Auguste",
+      "email": "gusteau@gmail.com",
+      "date": "5/17/2023, 10:18:12 AM",
+      "userphoto": "./assets/img/Qusto.jpg",
+      "id": 3
+    },
+    {
+      "name": "Aline Rivas",
+      "surname": "Ian Strong",
+      "email": "vekixalat@mailinator.com",
+      "date": "12/13/2023, 5:55:18 AM",
+      "userphoto": "./assets/img/Iqo - Copy.jpg",
+      "id": 4
+    },
+    {
+      "name": "Clarke Harris",
+      "surname": "Eliana Mcclure",
+      "email": "pogemo@mailinator.com",
+      "date": "12/13/2023, 5:55:31 AM",
+      "userphoto": "./assets/img/Iqo - Copy.jpg",
+      "id": 5
+    },
+    {
+      "name": "Myles",
+      "surname": "Mclean",
+      "email": "zowyvyha@mailinator.com",
+      "date": "12/13/2023, 1:01:12 AM",
+      "userphoto": "./assets/img/Remy.jpg",
+      "id": 8
+    },
+    {
+      "name": "Brittany",
+      "surname": "Ferguson",
+      "email": "dutahuha@mailinator.com",
+      "date": "12/13/2023, 9:26:53 AM",
+      "userphoto": "./assets/img/Alfredo.jpg",
+      "id": 9
+    },
+    {
+      "name": "Remy",
+      "surname": "mouse",
+      "email": "remy@gmail.com",
+      "date": "5/17/2023, 10:21:36 AM",
+      "userphoto": "./assets/img/remy2.jpg",
+      "id": 4
+    },
+    {
+      "name": "Remy",
+      "surname": "mouse",
+      "email": "remy@gmail.com",
+      "date": "5/17/2023, 10:21:36 AM",
+      "userphoto": "./assets/img/remy2.jpg",
+      "id": 4
+    },
+    {
+      "name": "Remy",
+      "surname": "mouse",
+      "email": "remy@gmail.com",
+      "date": "5/17/2023, 10:21:36 AM",
+      "userphoto": "./assets/img/remy2.jpg",
+      "id": 4
+    },
+    {
+      "name": "Murphy Blackburn",
+      "surname": "Maite Bentley",
+      "email": "jehate@mailinator.com",
+      "date": "12/13/2023, 5:13:47 AM",
+      "userphoto": "./assets/img/Iqo - Copy.jpg",
+      "id": 14
+    },
+    {
+      "name": "Bevis Moore",
+      "surname": "Benedict Cotton",
+      "email": "tyni@mailinator.com",
+      "date": "12/13/2023, 5:14:47 AM",
+      "userphoto": "./assets/img/Qusto.jpg",
+      "id": 15
+    },
+    {
+      "name": "Caldwell Colon",
+      "surname": "Hop Fernandez",
+      "email": "saru@mailinator.com",
+      "date": "12/13/2023, 5:36:37 AM",
+      "userphoto": "./assets/img/Collete.jpg",
+      "id": 17
+    },
+    {
+      "name": "Jermaine Carney",
+      "surname": "Arsenio Williamson",
+      "email": "gopo@mailinator.com",
+      "date": "12/13/2023, 5:39:17 AM",
+      "userphoto": "./assets/img/Alfredo.jpg",
+      "id": 18
+    }
+  ]
+}

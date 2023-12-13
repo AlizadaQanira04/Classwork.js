@@ -8,19 +8,20 @@ async function getData() {
   let response = await axios(`${BASE_URL}`);
   //   console.log(response.data);
   loading.classList.remove("show");
-  
-function drawTable(data) {
-  tBody.innerHTML = "";
-  data.forEach((element) => {
-    let tr = document.createElement("tr");
-    tr.innerHTML += `
+
+  function drawTable(data) {
+    tBody.innerHTML = "";
+    data.forEach((element) => {
+      let tr = document.createElement("tr");
+      tr.innerHTML += `
     <td>${element.name}</td>
     <td>${element.country}</td>
     <td>${element.domains[0]}</td>
     <td><a href="${element.web_pages[0]}">${element.web_pages[0]}</a></td>
    `;
-    tBody.append(tr);
-  });
+      tBody.append(tr);
+    });
+  }
 }
 
 // let uni = null;
@@ -29,7 +30,8 @@ function drawTable(data) {
 //     let response = await axios(`${BASE_URL}`);
 //     uni = response.data;
 //     uniCopy= structuredClone(uni);
-//   })();
+//   })();                                                  
+
 search.addEventListener("input", function (event) {
   loading.classList.add("show");
   fetch(`${BASE_URL}&name=${event.target.value.toLocaleLowerCase()}`)
@@ -38,5 +40,5 @@ search.addEventListener("input", function (event) {
       drawTable(data);
       loading.classList.remove("show");
     })
-    .catch();
+    .catch((err) => console.log(err));
 });
