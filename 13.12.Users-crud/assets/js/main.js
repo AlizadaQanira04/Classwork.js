@@ -34,14 +34,20 @@ async function deleteTr(id, btn) {
     await getData();
   }
 }
-let response = axios(`${BASE_URL}`).then((res)=>console.log(res.data));
-let favoriteItems=localStorage.setItem("products",JSON.stringify(response))
 let favorite = JSON.parse(localStorage.getItem("products")) ?? [];
 
 
 async function adToFavorite(id) {
+let response = axios(`${BASE_URL}/${id}`);
+  let data=response.data
+  console.log(data);
   let findItem =products.find((item) => item.id === id);
-  favorite.push(findItem)
+  if(!findItem){
+    favorite.push(findItem)
+
+  }else{
+    alert("this added")
+  }
   // console.log(basketItems);
   localStorage.setItem("favorite",JSON.stringify(favorite))
   

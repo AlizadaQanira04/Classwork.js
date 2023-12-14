@@ -24,5 +24,6 @@ function drawCard(data) {
 
 function deleteProduct(btn, id) {
    favorite =favoriteItems.filter((item) => item.id!==id);
-  btn.closest("div").remove();
+   localStorage.setItem("products",JSON.stringify(products))
+   btn.closest("div").remove()
 }
