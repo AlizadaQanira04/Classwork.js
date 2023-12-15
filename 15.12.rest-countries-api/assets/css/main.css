@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.fa-regular {
+  font-size: 1rem;
+}
+
+#section {
+  background-color: rgba(175, 184, 184, 0.329);
+  height: 90vh;
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  margin: 10px 0;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 5px;
+}
+select {
+  margin: 10px 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search {
+  position: relative;
+}
+.fa-solid {
+  position: absolute;
+  left: 10px;
+  bottom: 21px;
+}
+.loading {
+  display: none;
+}
+.loading.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.body-dark {
+  background-color: black;
+}
+.body-dark .card {
+  background-color: black;
+}
+.body-dark .card-body h5 {
+  color: white;
+}
+.body-dark .card-body p {
+  color: white;
+}
+.body-dark .header h2 {
+  color: white;
+}
+.body-dark .header button {
+  color: white;
+}
