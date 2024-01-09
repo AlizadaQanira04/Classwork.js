@@ -1,0 +1,89 @@
+#customers {
+  padding: 10rem 0;
+  background-color: azure;
+  .customers {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        color: rgba(0, 0, 0, 0.514);
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .boxes {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      .box {
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        padding: 25px 25px;
+        border-radius: 7px;
+        transition: all 600ms;
+        &:hover{
+            background-color: orange;
+            
+        }
+        p {
+          font-size: 1rem;
+          font-family: "Poppins", sans-serif;
+          color: rgba(0, 0, 0, 0.514);
+        }
+        h2 {
+          font-size: 2.5rem;
+          background-color: orange;
+          padding: 1px 10px;
+          border-radius: 50%;
+          color: white;
+          position: relative;
+          bottom: 40px;
+        }
+        .image {
+          display: flex;
+          gap: 2rem;
+
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
+            h1 {
+              color: orange;
+              font-size: 1.2rem;
+              font-family: "Poppins", sans-serif;
+            }
+            h3{
+               
+                font-size: 1.2rem;
+                font-family: "Poppins", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+#productsList {
+  .productsList {
+    padding: 3rem 0;
+    .boxes {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      width: 100%;
+     
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        width: 20%;
+        background-color: #f5ebeb;
+        padding: 12px 10px;
+        h2{
+            font-size: 1rem;
+          font-family: "Poppins", sans-serif;
+
+        }
+        p{
+            font-size: 0.9rem;
+          font-family: "Poppins", sans-serif;
+          color: rgba(0, 0, 0, 0.479);
+        }
+        .image {
+            img {
+              border-radius: 50%;
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+      @media only screen and (max-width:767px){
+        .box{
+            width: 100%;
+            
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+#aboutPage {
+  background-image: url(../images/bg_4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  .aboutPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: center;
+      width: 40%;
+      position: relative;
+      top: 200px;
+      left: 250px;
+      p {
+        color: rgba(0, 0, 0, 0.514);
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-family: "Poppins", sans-serif;
+        color: rgb(8, 5, 49);
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+      }
+      .play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .fa-solid {
+          color: white;
+          background-color: orange;
+          padding: 20px 20px;
+          border-radius: 50%;
+          border: 2px solid transparent;
+          transition: all 600ms;
+          &:hover {
+            border: 2px solid orange;
+            background-color: transparent;
+            color: orange;
+          }
+        }
+        a {
+          color: orange;
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+footer {
+  background-color: rgba(102, 162, 211, 0.829);
+  padding: 50px 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .fa-solid {
+  color: blue;
+}
+footer .footer span {
+  color: blue;
+}
+footer .footer p {
+  color: rgba(0, 0, 0, 0.363);
+}
+
+#homePage {
+  display: flex;
+  width: 100%;
+}
+#homePage #left-part {
+  height: 100vh;
+  background-color: #d4eaf5;
+  width: 50%;
+}
+#homePage #left-part .left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7rem;
+  margin: 30px;
+}
+#homePage #left-part .left-part .logo h2 {
+  font-size: 1.5rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+#homePage #left-part .left-part .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+#homePage #left-part .left-part .text h1 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.753);
+}
+#homePage #left-part .left-part .text h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+#homePage #left-part .left-part .text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.411);
+}
+#homePage #left-part .left-part .text button {
+  padding: 14px 1.5rem;
+  border-radius: 15px;
+  border: none;
+  color: rgb(4, 4, 65);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+#homePage #right-part {
+  background-image: url(../images/bg_2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 50%;
+}
+#homePage #right-part .right-part {
+  margin: 40px;
+}
+#homePage #right-part .right-part nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+#homePage #right-part .right-part nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max: 767px) {
+  #homePage {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+#productsList .productsList {
+  padding: 3rem 0;
+}
+#productsList .productsList .boxes {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#productsList .productsList .boxes .box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 20%;
+  background-color: #f5ebeb;
+  padding: 12px 10px;
+}
+#productsList .productsList .boxes .box h2 {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+#productsList .productsList .boxes .box p {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.479);
+}
+#productsList .productsList .boxes .box .image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (max-width: 767px) {
+  #productsList .productsList .boxes .box {
+    width: 100%;
+  }
+}
+
+#aboutPage {
+  background-image: url(../images/bg_4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#aboutPage .aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#aboutPage .aboutPage .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+#aboutPage .aboutPage .text p {
+  color: rgba(0, 0, 0, 0.514);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+#aboutPage .aboutPage .text h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(8, 5, 49);
+}
+#aboutPage .aboutPage .text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+#aboutPage .aboutPage .text .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#aboutPage .aboutPage .text .play .fa-solid {
+  color: white;
+  background-color: orange;
+  padding: 20px 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 600ms;
+}
+#aboutPage .aboutPage .text .play .fa-solid:hover {
+  border: 2px solid orange;
+  background-color: transparent;
+  color: orange;
+}
+#aboutPage .aboutPage .text .play a {
+  color: orange;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#recentBlog {
+  padding: 7rem 0;
+}
+#recentBlog .recentBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+#recentBlog .recentBlog .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#recentBlog .recentBlog .text p {
+  color: rgba(0, 0, 0, 0.514);
+  font-family: "Poppins", sans-serif;
+}
+#recentBlog .recentBlog .text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+}
+#recentBlog .recentBlog .blogs {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#recentBlog .recentBlog .blogs .blog {
+  display: flex;
+  gap: 10px;
+  width: 45%;
+}
+#recentBlog .recentBlog .blogs .blog .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#recentBlog .recentBlog .blogs .blog .left img {
+  width: 100%;
+  height: 300px;
+}
+#recentBlog .recentBlog .blogs .blog .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+#recentBlog .recentBlog .blogs .blog .right .icons .icon {
+  padding: 10px 0;
+}
+#recentBlog .recentBlog .blogs .blog .right .icons .icon p {
+  color: rgba(0, 0, 0, 0.637);
+}
+#recentBlog .recentBlog .blogs .blog .right .icons .icon .fa-solid,
+#recentBlog .recentBlog .blogs .blog .right .icons .icon .fa-regular {
+  color: orange;
+}
+#recentBlog .recentBlog .blogs .blog .right h3 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+#recentBlog .recentBlog .blogs .blog .right p {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.479);
+}
+
+#customers {
+  padding: 10rem 0;
+  background-color: azure;
+}
+#customers .customers {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+#customers .customers .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+#customers .customers .text p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.514);
+}
+#customers .customers .text h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+#customers .customers .boxes {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+#customers .customers .boxes .box {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 25px 25px;
+  border-radius: 7px;
+  transition: all 600ms;
+}
+#customers .customers .boxes .box:hover {
+  background-color: orange;
+}
+#customers .customers .boxes .box p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.514);
+}
+#customers .customers .boxes .box h2 {
+  font-size: 2.5rem;
+  background-color: orange;
+  padding: 1px 10px;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  bottom: 40px;
+}
+#customers .customers .boxes .box .image {
+  display: flex;
+  gap: 2rem;
+}
+#customers .customers .boxes .box .image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#customers .customers .boxes .box .image .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+#customers .customers .boxes .box .image .text h1 {
+  color: orange;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+#customers .customers .boxes .box .image .text h3 {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=main.css.map */
